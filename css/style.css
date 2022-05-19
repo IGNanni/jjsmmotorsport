@@ -101,10 +101,10 @@ main {
 }
 
 .bandera {
-    background-image: url(../imagenes/bandera.jpg);
+    background-image: url(../imagenes/bandera.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 20vw;
+    width: 10vw;
 }
 
 .principal {
