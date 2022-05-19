@@ -23,39 +23,19 @@ h1 {
 h1>span {
     color: red;
 }
+
 .menu {
+    width: 20%;
     margin-right: 10vw;
 }
-
-.menu ul {
+.menu nav ul {
     display: flex;
     flex-direction: column;
-    height: 40vh;
-    justify-content: space-evenly;
     align-items: center;
+
 }
-.menu li {
-    width: 150px;
-    position: relative;
-    text-align: center;
-}
-.menu nav a {
-    color: white;
-}
-/* 
-@keyframes .menu nav a:hover {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 50%;
-    width: 150px;
-    z-index: 1;
-    height: 5px;
-    background-color: red;
-    from {transform:scalex(0)}
-    to {transform:scaleX(100)}
-    
-} */
+
+
 main {
     display: flex;
 }
