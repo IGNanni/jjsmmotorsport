@@ -6,11 +6,25 @@
 }
 
 header {
-    background-color: black;
+    background-color: #111;
+
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 40vh;
+    width: 100%;
+}
+
+header:before {
+    content: "";
+    height: 40vh;
+    width: 100%;
+    position: absolute;
+    background: -webkit-gradient(linear, 0% 0%, 0% 70%, from(rgba(95, 95, 95, 0.048)), to(rgba(0, 0, 0, 0.801))),
+     -webkit-gradient(linear, left top, right bottom, color-stop(0, rgba(255, 255, 255, 0)), color-stop(0.5, rgba(255, 255, 255, .1)),
+      color-stop(0.501, rgba(255, 255, 255, 0.021)), color-stop(1, rgba(255, 255, 255, 0.041)));
+    background: -moz-linear-gradient(top, rgba(255, 255, 255, 0.438), rgba(0, 0, 0, 0.527)), -moz-linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
+    background: linear-gradient(top, rgba(255, 255, 255, .15), rgba(0, 0, 0, .25)), linear-gradient(left top, rgba(255, 255, 255, 0), rgba(255, 255, 255, .1) 50%, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0));
 }
 
 .logo {
@@ -18,15 +32,18 @@ header {
     margin-left: 10vw;
     position: relative;
 }
+
 .logo img {
     position: absolute;
     width: 100%;
     right: -70%;
     top: -280%;
 }
+
 h1 {
     color: white;
 }
+
 h1>span {
     color: red;
 }
@@ -35,6 +52,7 @@ h1>span {
     width: 20%;
     margin-right: 10vw;
 }
+
 .menu nav ul {
     display: flex;
     flex-direction: column;
@@ -43,11 +61,13 @@ h1>span {
     justify-content: space-evenly;
     list-style: none;
 }
+
 .menu nav ul li {
-width: 100%;
-text-align: center;
-z-index: 3;
+    width: 100%;
+    text-align: center;
+    z-index: 3;
 }
+
 .menu nav ul li a {
     display: block;
     background-image: linear-gradient(red, red);
@@ -57,17 +77,21 @@ z-index: 3;
     transition: background-size .3s;
     border-radius: 3px;
 }
-.menu nav ul li a:hover, a:focus {
+
+.menu nav ul li a:hover,
+a:focus {
     background-size: 100% 3px;
 }
-.menu nav ul li span{
+
+.menu nav ul li span {
     color: white;
     background-color: black;
     padding: 0 5px;
     border-radius: 5px;
 }
 
-.menu nav ul li a:hover span, a:focus span {
+.menu nav ul li a:hover span,
+a:focus span {
     color: red;
 }
 
@@ -82,8 +106,9 @@ main {
     background-size: cover;
     width: 20vw;
 }
+
 .principal {
-   background-color: rgba(49, 49, 49, 0.918);
+    background-color: rgba(49, 49, 49, 0.918);
 }
 
 
@@ -92,4 +117,3 @@ footer {
     justify-content: space-between;
     background-color: black;
 }
-
