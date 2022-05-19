@@ -14,9 +14,16 @@ header {
 }
 
 .logo {
+    /* height: 40vh; */
     margin-left: 10vw;
+    position: relative;
 }
-
+.logo img {
+    position: absolute;
+    width: 100%;
+    right: -70%;
+    top: -280%;
+}
 h1 {
     color: white;
 }
@@ -39,6 +46,7 @@ h1>span {
 .menu nav ul li {
 width: 100%;
 text-align: center;
+z-index: 3;
 }
 .menu nav ul li a {
     display: block;
@@ -56,6 +64,7 @@ text-align: center;
     color: white;
     background-color: black;
     padding: 0 5px;
+    border-radius: 5px;
 }
 
 .menu nav ul li a:hover span, a:focus span {
